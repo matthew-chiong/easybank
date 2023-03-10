@@ -13,8 +13,8 @@ const hamburgerEvent = () => {
   });
 };
 
-navLinks.forEach((links) => {
-  links.addEventListener("click", () => {
-    hamburgerEvent();
-  });
-});
+// navLinks.forEach((links) => {
+//   links.addEventListener("click", () => {
+//     hamburgerEvent();
+//   });
+// });
