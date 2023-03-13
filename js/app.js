@@ -5,16 +5,12 @@ const intro = document.getElementById("intro");
 const navLinks = document.querySelectorAll(".header-nav-links");
 
 const hamburgerEvent = () => {
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navBar.classList.toggle("active");
-    overlay.classList.toggle("active");
-    intro.classList.toggle("active");
-  });
+  hamburger.classList.toggle("active");
+  navBar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  intro.classList.toggle("active");
 };
 
-// navLinks.forEach((links) => {
-//   links.addEventListener("click", () => {
-//     hamburgerEvent();
-//   });
-// });
+hamburger.addEventListener("click", (e) => {
+  hamburgerEvent();
+});
